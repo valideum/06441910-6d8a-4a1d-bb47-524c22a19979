@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Local Carpenters | Custom Craft Connect</title>
+  <meta name="description" content="Search vetted local carpenters, post your project, and manage quotes through Custom Craft Connect." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a class="logo" href="/">Custom <span>Craft</span> Connect</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="active" href="/carpenters.html">Find a Carpenter</a>
+        <a href="/index.html#how-it-works">How It Works</a>
+        <a href="/for-carpenters.html">For Carpenters</a>
+        <a href="/login.html">Login/Sign Up</a>
+        <a class="nav-cta" href="#project-form">Post a Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-secondary" id="search">
+      <div class="container">
+        <div>
+          <h1>Find experienced carpenters ready for your next build.</h1>
+          <p>Search by specialty and location, then share your brief once to receive curated proposals.</p>
+        </div>
+        <div class="search-bar" aria-label="Search carpenters">
+          <form data-async>
+            <label>
+              <span class="sr-only">Project type</span>
+              <input type="text" name="project" placeholder="What kind of project do you need?" required />
+            </label>
+            <label>
+              <span class="sr-only">Zip code</span>
+              <input type="text" name="zip" placeholder="Your ZIP code" pattern="[0-9]{5}" required />
+            </label>
+            <button class="btn-primary" type="submit">Search Carpenters</button>
+            <p class="form-feedback" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Popular project types">
+      <div class="container">
+        <h2 class="section-title">Explore popular projects</h2>
+        <p class="section-subtitle">Tap a category to see specialists who build it best.</p>
+        <div class="feature-tags">
+          <a class="tag" href="#project-form">Custom Built-ins</a>
+          <a class="tag" href="#project-form">Deck Construction</a>
+          <a class="tag" href="#project-form">Cabinetry</a>
+          <a class="tag" href="#project-form">Furniture Repair</a>
+          <a class="tag" href="#project-form">Outdoor Structures</a>
+          <a class="tag" href="#project-form">Trim & Finish Work</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Detailed process">
+      <div class="container">
+        <h2 class="section-title">Your project, step by step</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="icon-circle">1</div>
+            <h3>Share your plans</h3>
+            <p>Upload inspiration photos, measurements, and must-have materials. The more detail, the better the quote.</p>
+          </article>
+          <article class="card">
+            <div class="icon-circle">2</div>
+            <h3>Evaluate proposals</h3>
+            <p>Compare timelines, pricing, and warranty info plus verified reviews from nearby homeowners.</p>
+          </article>
+          <article class="card">
+            <div class="icon-circle">3</div>
+            <h3>Book & track</h3>
+            <p>Use milestone check-ins, change-order approvals, and secure payments to keep everything transparent.</p>
+          </article>
+        </div>
+        <p>Are you a professional looking for leads? <a href="/for-carpenters.html">Visit our carpenter hub.</a></p>
+      </div>
+    </section>
+
+    <section id="project-form" aria-label="Post your project">
+      <div class="container">
+        <div class="card">
+          <h2 class="section-title">Post your project</h2>
+          <p class="section-subtitle">Tell us the essentials and we’ll match you with three vetted carpenters within two business days.</p>
+          <form data-async>
+            <label>
+              Project Title
+              <input type="text" name="title" placeholder="e.g., Floating shelves for living room" required />
+            </label>
+            <label>
+              ZIP Code
+              <input type="text" name="zip" placeholder="12345" pattern="[0-9]{5}" required />
+            </label>
+            <label>
+              Budget Range
+              <select name="budget" required>
+                <option value="">Select range</option>
+                <option value="under-2k">Under $2,000</option>
+                <option value="2-5k">$2,000 – $5,000</option>
+                <option value="5-10k">$5,000 – $10,000</option>
+                <option value="10k+">$10,000+</option>
+              </select>
+            </label>
+            <label>
+              Project Details
+              <textarea name="details" placeholder="Dimensions, materials, preferred timeline" required></textarea>
+            </label>
+            <button class="btn-primary" type="submit">Post Project</button>
+            <p class="form-feedback" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© <span id="year"></span> Custom Craft Connect. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+      <div class="social-links" aria-label="Social media">
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.67 4.8 6.15V23h-4v-6.5c0-1.55-.03-3.55-2.17-3.55-2.18 0-2.51 1.7-2.51 3.45V23h-4V8z" /></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.403a4.9 4.9 0 011.77 1.15 4.9 4.9 0 011.15 1.77c.163.46.35 1.26.403 2.43.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.43a4.9 4.9 0 01-1.15 1.77 4.9 4.9 0 01-1.77 1.15c-.46.163-1.26.35-2.43.403-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.068c-1.17-.054-1.97-.24-2.43-.403a4.9 4.9 0 01-1.77-1.15 4.9 4.9 0 01-1.15-1.77c-.163-.46-.35-1.26-.403-2.43C2.212 15.784 2.2 15.4 2.2 12s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.43a4.9 4.9 0 011.15-1.77 4.9 4.9 0 011.77-1.15c.46-.163 1.26-.35 2.43-.403C8.416 2.212 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.522.012-4.76.068-1.02.047-1.573.216-1.94.36-.49.19-.84.418-1.208.787-.369.368-.597.717-.787 1.208-.144.367-.313.92-.36 1.94-.056 1.238-.068 1.61-.068 4.76s.012 3.522.068 4.76c.047 1.02.216 1.573.36 1.94.19.49.418.84.787 1.208.368.369.717.597 1.208.787.367.144.92.313 1.94.36 1.238.056 1.61.068 4.76.068s3.522-.012 4.76-.068c1.02-.047 1.573-.216 1.94-.36.49-.19.84-.418 1.208-.787.369-.368.597-.717.787-1.208.144-.367.313-.92.36-1.94.056-1.238.068-1.61.068-4.76s-.012-3.522-.068-4.76c-.047-1.02-.216-1.573-.36-1.94a3.1 3.1 0 00-.787-1.208 3.1 3.1 0 00-1.208-.787c-.367-.144-.92-.313-1.94-.36-1.238-.056-1.61-.068-4.76-.068zm0 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm6.4-2.4a1.05 1.05 0 110 2.1 1.05 1.05 0 010-2.1zM12 9a3 3 0 100 6 3 3 0 000-6z" /></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
